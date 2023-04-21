@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin:   auto;
+     width: 100%;
+}
+hr{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.content-footer{
+    width: 700px;
+    padding-left: 600px;
+    padding-top: 30px;
+    padding-right: 300px;
+    font-size: 10px;
+    text-align: justify;
+    color: rgb(138, 135, 135);
+   
+}
+.content-footer2{
+    text-align: left;
+    padding-left: 150px;
+    width: 250px;
+    font-size: 13px;
+    color: white;
+}
+#logo1{
+    padding-left: 150px;
+    padding-top: 30px;
+    height: 90px;
+}
+#logo2{
+    padding-right: 100px;
+    position: absolute;
+    padding-top: 30px;
+    height: 70px;
+}
+#logo3{
+    padding-top: 30px;
+    padding-right: 40px;
+    height: 150px;
+}
+
+.container>footer {
+    border-top: 5px double cyan;
+    text-align: center;
+    height: 300px;
+    background-color: black;
+    clear: both;
+}
+.container>header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container>header>nav>ul>li{
+    display:inline-block;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+.container>header>nav>ul>li>a{
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px 10px;
+    text-align: right;
+    font-size: 27px;
+}
+.container>header>nav>ul>li>a:hover{
+    color: yellow;
+    /*
+    khi đưa chuột vào chữ chuyển sang màu vàng*/
+}
+
+
+.container>header>nav{
+    background-color: black;
+    height: 50px;
+    text-align: right;
+    padding-right: 100px;
+    
+}
+.banner{
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+    height: 600px;
+}
+#new-event{
+    font-size: x-large;
+    text-align: center;
+}#new-event2{
+    padding-top: 20px;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+
+.gird-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    text-align: center;
+    gap: 50px 100px;
+    padding-left: 50px;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/originals/62/02/2b/62022b20e22d6a1aa7133503122c8bb1.jpg');
+}
+.content2{
+    background-color: rgb(26, 24, 24);
+    height: 800px;
+}
+
+
+.gird-item{
+    width: 270px;
+}
+.gird-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.gird-item2{
+    
+    padding: 10px 10px;
+    font-size: 20px;
+    border: 2px solid purple;
+}
+.gird-item2>li>a{
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+.gird-item2>li>a>button{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+}
+.gird-container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 20px;
+    text-align: center;
+    gap: 50px 100px;
+    padding-left: 100px;
+    
+}
+.gird-item3{
+    color: white;
+    width: 330px;
+    background-color: rgb(59, 57, 57);
+    text-align: left;
+}
+#date{
+    color: rgb(162, 18, 162);
+    font-size: large;
+}
+.new-videos{
+    background-image: url('https://www.whatsappprofiledpimages.com/wp-content/uploads/2021/09/Beautiful-White-Background-Images-photo-pics-for-download.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+#st-video{
+    margin-left: 5px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 30px;
+}
+.menu-videos{
+    display: grid;
+    text-align: left;
+    font-size: large;
+}
+.menu-content-videos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    font-size: large;
+    padding-left: 20px;
+}
+.date-video{
+    color: chocolate;
+}
+.title-video{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    color: darkblue;
+}
+
+.slide
+{
+    
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide #prev,
+.slide #next
+{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    font-size: 35px;
+    border: none;
+    background: none;
+    color: white;
+    top: 50%;
+    cursor: pointer;
+
+}
+.slide #next
+{
+    left: 94%;
+}
+.slide #prev:hover,
+.slide #next:hover
+{
+    background-color: aqua;
+}
+.item
+{
+    display: none;
+}
+.item.active{
+    display: block;
+
+}
+.item img {
+    width: 100%;
+    height: 600px;
+}
+/*
+@media (min-width: 576px)
+{
+    .container
+    {
+        max-width: 100%;
+    }
+    header>nav{
+        max-width: 729px;
+
+    }
+    .container>header>nav>ul>li>a{
+        line-height: 30px;
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+        padding: 10px 10px;
+        text-align: right;
+        font-size: 12px;
+    }
+    footer{
+        height: 1000px;
+        background-color: black;
+    }
+    footer>img{
+        width: 20%;
+    }
+    .content-footer{
+        width: 400px;
+        padding-left: 180px;
+        padding-top: 30px;
+        padding-right: 300px;
+        font-size: 5px;
+        text-align: justify;
+        color: rgb(138, 135, 135);
+       
+        
+    }
+    .gird-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding: 20px;
+        text-align: center;
+        gap: 50px 100px;
+        padding-left: 50px;
+        align-items: center;
+        background-image: url('https://i.pinimg.com/originals/62/02/2b/62022b20e22d6a1aa7133503122c8bb1.jpg');
+    }
+    .gird-container3{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding: 5px;
+        text-align: center;
+        gap: 20px 50px;
+        padding-left: 100px;
+        
+    }
+    .content2{
+        background-color: rgb(26, 24, 24);
+        height: 1090px;
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
+    }
+    #st-video{
+        margin-left: 5px;
+    }
+    .videos{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-left: 10px;
+    }
+    .menu-videos{
+        display: grid;
+        text-align: left;
+        font-size: 10px;
+    }
+    .menu-content-videos{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        text-align: left;
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    .menu-content-videos>image{
+        height: 50px;
+        width: 50px;
+    }
+    .date-video{
+        color: chocolate;
+        font-size: 15px;
+    }
+    .title-video{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: darkblue;
+    }
+
+}

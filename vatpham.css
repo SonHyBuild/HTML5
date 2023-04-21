@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: 0px auto;
+}
+.content-footer{
+    width: 700px;
+    padding-left: 600px;
+    padding-top: 30px;
+    padding-right: 300px;
+    font-size: 10px;
+    text-align: justify;
+    color: rgb(138, 135, 135);
+   
+}
+.content-footer2{
+    text-align: left;
+    padding-left: 150px;
+    width: 250px;
+    font-size: 13px;
+    color: white;
+}
+#logo1{
+    padding-left: 150px;
+    padding-top: 30px;
+    height: 90px;
+}
+#logo2{
+    padding-right: 100px;
+    position: absolute;
+    padding-top: 30px;
+    height: 70px;
+}
+#logo3{
+    padding-top: 30px;
+    padding-right: 40px;
+    height: 150px;
+}
+
+.container>footer {
+    border-top: 5px double cyan;
+    text-align: center;
+    height: 300px;
+    background-color: black;
+    clear: both;
+}
+.container>header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container>header>nav>ul>li{
+    display:inline-block;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+.container>header>nav>ul>li>a{
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px 10px;
+    text-align: right;
+    font-size: 27px;
+}
+
+.container>header>nav{
+    background-color: black;
+    height: 50px;
+    text-align: right;
+    padding-right: 100px;
+    
+}
+.container>header>nav>ul>li>a:hover{
+    color: yellow;
+}
+.items:hover{
+    background-color: cadetblue;
+    transform: scale(1.1);
+    /*khi đưa chuột vào items sẽ được zoom*/
+}
+.banner{
+   
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/7099fc28008799.56e41b31e770e.gif');
+    height: 220px;
+    padding-left: 100px;
+   
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.content-banner{
+    width: 600px;
+    position: absolute;
+    font-size: larger;
+    color: rgb(44, 44, 44);
+    margin-left: 120px;
+    margin-top: 30px;
+    line-height: 30px;
+
+}
+#img-banner{
+    position: relative;
+    margin-right: 150px;
+
+}
+#title{
+    color: black;
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    text-align: justify;
+    gap: 50px 100px;
+    padding-left: 100px;
+    background-image: url('https://dep.anh9.com/imgs/131119hinh-nen-hoa-van-den-doc-dao-danh-cho-website.jpg');
+    
+}
+.items{
+    line-height: 25px;
+    background-color: rgb(56, 54, 54);
+    color: white;
+    border: rgb(48, 19, 153) solid 3px;
+}
+#date-items{
+    color: yellow;
+    margin: 5px;
+    font-size: 20px;
+}
+.content-items{
+    margin: 5px;
+}
+.container2{
+    background-color: black;
+    color: yellow;
+     text-align: center;
+     padding-top: 30px;
+}
+.loader{
+    display: block;margin: 0 auto;
+    border: 10px solid gray;
+    border-top-color: cyan;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    animation: spin 1s ease infinite;
+    /*thiết lập transition vào*/
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*bắt đầu quay với góc 0 độ cho đến 360 độ, rotate là hiệu ứng quay tròn    */

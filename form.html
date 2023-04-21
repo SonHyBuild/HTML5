@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-form">
+        <form action="#">
+            <div class="form-group">
+                
+                <input type="text" class="dk" id="name" placeholder="Họ và tên" required >
+                <span></span>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="dk" id="email" placeholder="Email" required pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$">
+                <span></span>
+            </div>
+
+            <div class="form-group">
+                
+                <input type="text" class="dk" id="number-phonne" placeholder="Số điện thoại" required pattern="^(0[234][0-9]{8}|1[89]00[0-9]{4})$">
+                <span></span>
+            </div>
+
+        
+            <div class="button-group">
+                <br>
+                <button class="button" type="submit">Đăng ký</button>
+                <button class="button" type="submit" class="button">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        var input1=document.getElementById('number-phonne');
+        input1.oninvalid=function(event){
+            event.target.setCustomValidity('Nhập vui lòng nhập đúng định dạng số điện thoại');
+        };
+        var input2=document.getElementById('email');
+        input2.oninvalid=function(event){
+            event.target.setCustomValidity('Nhập vui lòng nhập đúng định dạng email');
+        };
+    </script>
+</body>
+</html>

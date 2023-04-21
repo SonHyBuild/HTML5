@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="dangki.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href=""><img src="images/logo.png" alt="" align="left" width="250px" height="50px"></a>
+                <ul>
+                    <li><a href="Assignment.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="sukien.html">Sự kiện</a></li>
+                    <li><a href="vatpham.html">Vật phẩm</a></li>
+                    <li><a href="dangki.html">Đăng kí</a></li>
+                    
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <form id="form" onsubmit="kiemtra();">
+                <div class="form-group">
+                    <legend>Tên đăng nhập</legend>
+                    <input type="text" class="dk" id="msv">
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <legend>Password</legend>
+                    <input type="text" class="dk" id="name">
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <legend>Email</legend>
+                    <input type="email" class="dk" id="email">
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <legend>Giới tính</legend>
+
+                    <div class="nho">
+                        <input type="radio" name="gender"> Nam
+                        <input type="radio" name="gender"> Nữ
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+
+                    <div>
+                        <legend>Sở thích</legend>
+                        <label><input type="checkbox" value="Đọc sách" name="checkbox">Đọc sách</label>
+
+                        <label><input type="checkbox" value="Du lịch" name="checkbox">Du lịch</label>
+
+                        <label><input type="checkbox" value="Âm nhạc" name="checkbox">Âm nhạc</label>
+
+                        <label><input type="checkbox" value="Ẩm thực" name="checkbox">Ẩm thực</label>
+
+                        <label><input type="checkbox" value="hobbies" name="checkbox" onclick="hienthi(checked)"> Khác</label>
+                    </div>
+                    <div id="other_hobbies" style="display: none;">
+                        <label >Sở thích khác:</label> <input type="text" >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <legend>Quốc tịch</legend>
+                    <select name="select" class="select" id="nationality">
+                        <option value="0">Chọn quốc tịch</option>
+                        <option value="1">Việt Nam</option>
+                        <option value="2">England</option>
+                        <option value="3">Brazil</option>
+                        <option value="4">Argentina</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <legend>Ghi chú</legend>
+                    <textarea type="textarea" class="note" id="note" maxlength="300"></textarea><br>
+                    <span></span>
+                </div>
+                <div class="nut">
+                    <br>
+                    <button class="button">Đăng ký</button>
+                    <button type="submit" class="button">Nhập lại</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <img src="images/logos.png" alt="" align="left" id="logo1">
+            <img src="images/fo4.png" alt="" align="right" id="logo3">
+            <div class="content-footer">
+                © 201​8​ ELECTRONIC ARTS INC. EA, EA SPORTS, AND THE EA SPORTS LOGO ARE TRADEMARKS OF ELECTRONIC
+                ARTS
+                INC. OFFICIAL FIFA LICENSED PRODUCT. © FIFA NAME AND FIFA'S OFFICIAL LICENSED PRODUCT LOGO ARE
+                COPYRIGHTS AND/OR TRADEMARKS OF FIFA. ALL RIGHTS RESERVED. MANUFACTURED UNDER LICENSE BY ELECTRONIC
+                ARTS
+                INC. THE USE OF REAL PLAYER NAMES AND LIKENESSES IS AUTHORIZED BY FIFPRO COMMERCIAL ENTERPRISES BV.
+                THE
+                PREMIER LEAGUE LOGO © THE FOOTBALL ASSOCIATION PREMIER LEAGUE LIMITED 2018. THE PREMIER LEAGUE LOGO
+                IS A
+                TRADEMARK OF THE FOOTBALL ASSOCIATION PREMIER LEAGUE LIMITED WHICH IS REGISTERED IN THE UK AND OTHER
+                JURISDICTIONS. THE PREMIER LEAGUE CLUB LOGOS ARE COPYRIGHT WORKS AND REGISTERED TRADEMARKS OF THE
+                RESPECTIVE CLUBS. ALL ARE USED WITH THE KIND PERMISSION OF THEIR RESPECTIVE OWNERS. MANUFACTURED
+                UNDER
+                LICENSE FROM THE FOOTBALL ASSOCIATION PREMIER LEAGUE LIMITED. NO ASSOCIATION WITH NOR ENDORSEMENT OF
+                THIS PRODUCT BY ANY PLAYER IS INTENDED OR IMPLIED BY THE LICENSE GRANTED BY THE FOOTBALL ASSOCIATION
+                PREMIER LEAGUE LIMITED TO ELECTRONIC ARTS. ALL OTHER TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE
+                OWNERS.
+            </div>
+            <img src="images/icon-age.png" alt="" id="logo2" align="right">
+
+            <div class="content-footer2">
+                <br> -CÔNG TY CỔ PHẦN GIẢI TRÍ VÀ THỂ THAO ĐIỆN TỬ VIỆT NAM
+                <br> -Địa chỉ: Tầng 29, tòa nhà Trung tâm Lotte Hà Nội, số 54, đường Liễu Giai, Phường Cống Vị, Quận
+                Ba
+                Đình, Thành phố Hà Nội, Việt Nam
+                <br> -Hotline: 19001282
+            </div>
+
+        </footer>
+    </div>
+    
+    <script src="dangki.js"></script>
+</body>
+</html>

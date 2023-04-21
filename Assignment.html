@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <link rel="stylesheet" href="Assigment.css">
+</head>
+
+<body onload="start();">
+    <div class="container">
+        <header>
+            <nav>
+                <a href=""><img src="images/logo.png" alt="" align="left" width="250px" height="50px"></a>
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="sukien.html">Sự kiện</a></li>
+                    <li><a href="vatpham.html">Vật phẩm</a></li>
+                    <li><a href="dangki.html">Đăng kí</a></li>
+                    
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <div class="slide">
+                <button id="prev" onclick="prev();">
+                    < </button>
+                        <button id="next" onclick="next();">></button>
+                        <div class="slide_show">
+                            <div class="item active">
+                                <img src="images/0.jpg" id="anh">
+                            </div>
+                            <div class="item">
+                                <img src="images/1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/4.jpg" alt="">
+                            </div>
+                        </div>
+            </div>
+        </section>
+        <div class="content">
+            <hr width="100%" size="4px" align="center" color="teal" />
+            <main>
+                <h2 id="new-event">SỰ KIỆN ĐANG DIỄN RA</h2>
+                <hr width="25%" size="5px" align="center" color="grey" />
+                <div class="gird-container">
+                    <div class="gird-item">
+                        <img src="images/vongquanhthegioi.png" alt="" width="270px">
+                        <h2>Vòng quanh thế giới</h2>
+                        Sự kiện Vòng Quanh Thế Giới có sự xuất hiện của những siêu phẩm MC mạ vàng cực kỳ giá trị.
+                    </div>
+                    <div class="gird-item">
+                        <img src="images/sotayhlvmua9.png" alt="" width="270px">
+                        <h2>Sổ tay HLV mùa 9</h2>
+                        Sổ tay HLV đã chính thức ra mắt, đem đến hàng loạt phần quà hấp dẫn như mùa thẻ FA, LOL mạ bạc
+                        và những vật phẩm bí mật giá trị.
+                    </div>
+                    <div class="gird-item">
+                        <img src="images/sancoruclua.png" alt="" width="270px">
+                        <h2>Sân cỏ rực lửa</h2>
+                        Sự kiện Sân Cỏ Rực Lửa đã trở lại trong hè này, đem đến hàng loạt vật phẩm “HOT” như ICONS, mùa
+                        thẻ mới FA, LOL mạ bạc.
+                    </div>
+                    <div class="gird-item">
+                        <img src="images/monthly.png" alt="" width="270px">
+                        <h2>Gói thẻ hàng tháng</h2>
+                        Monthly Package đã trở lại, liệu các HLV sẽ chọn sở hữu dàn siêu sao cực xịn, hay nắm trong tay
+                        hàng chục tỷ BP nào?
+                    </div>
+                </div>
+                <hr width="15%" size="5px" align="center" color="grey" />
+            </main>
+        </div>
+        <div class="content2">
+            <main>
+                <h2 id="new-event2">CÁC TIN NỔI BẬT</h2>
+                <hr width="15%" size="5px" align="center" color="white" />
+                <div class="gird-container2">
+                    <div class="gird-item2">
+                        <li><a href="">SỰ KIỆN</a></li>
+                    </div>
+                    <div class="gird-item2">
+                        <li><a href="">VẬT PHẨM</a></li>
+                    </div>
+                    <div class="gird-item2">
+                        <li><a href="">GIẢI ĐẤU</a></li>
+                    </div>
+                    <div class="gird-item2">
+                        <li><a href=""><button>>>Xem tất cả</button></a></li>
+                    </div>
+                </div>
+                <div class="gird-container3">
+
+                    <div class="gird-item3">
+                        <img src="images/1.png" alt="">
+                        <p id="date">16.07.2022</p>
+                        <h2>VÒNG QUANH THẾ GIỚI: SĂN SIÊU SAO 22TOTS CÙNG SIÊU PHẨM MC MẠ VÀNG CỰC CHẤT</h2>
+                        Sự xuất hiện của mùa thẻ giới hạn 22TOTS khiến bao HLV đứng ngồi không yên với hàng loạt bản
+                        nâng cấp chất lượng của các siêu sao, đặc biệt sự kiện còn có sự xuất hiện của những siêu phẩm
+                        MC mạ vàng cực kỳ giá trị.
+
+
+                    </div>
+                    <div class="gird-item3">
+                        <img src="images/2.png" alt="">
+                        <p id="date">14.07.2022</p>
+                        <h2>[SỰ KIỆN CHUYỂN SÒ SANG FC/ MC]: CƠ HỘI SỞ HỮU DÀN SAO HÀNG ĐẦU MÙA 22TOTS HOÀN TOÀN MIỄN
+                            PHÍ</h2>
+
+                        Thế nên, từ ngày 14.07, sự kiện chuyển Sò chính thức xuất hiện nhằm đem đến cơ hội sở hữu dàn
+                        sao mùa thẻ 22TOTS hoàn toàn miễn phí.
+                    </div>
+                    <div class="gird-item3">
+                        <img src="images/3.png" alt="">
+                        <p id="date">10.07.2022</p>
+                        <h2>[TÍNH NĂNG MỚI] TRẢI NGHIỆM ĐÁ XẾP HẠNG CỰC BAY VỚI RANKING 2.5</h2>
+                        Siêu cập nhật tháng 07 đã chính thức cập bến FIFA Online 4 với loạt tính năng mới mẻ đem đến
+                        nhiều trải nghiệm thú vị cho các HLV. Thế nhưng, trong loạt tính năng đó không thể không nhắc
+                        tới sự xuất hiện của Ranking 2.5 – một tính năng đem đến những trải nghiệm mới mẻ khi đá xếp
+                        hạng.
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <div class="new-videos">
+            <hr width="100%" size="5px" align="center" color="purple" />
+            <h2>VIDEO NỔI BẬT</h2>
+            <hr width="10%" size="5px" align="center" color="teal" />
+            <br>
+            <div class="videos">
+                <iframe id="st-video" width="950" height="549" src="https://www.youtube.com/embed/Gd5FE3J9IG0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="menu-videos">
+
+                    <div class="menu-content-videos"><img width="226" height="150"
+                            src="https://fo4.garena.vn/wp-content/uploads/2022/07/Thumnails33_TOP5_1920x1080-326x183.png"
+                            class="attachment-fo4_326x183 size-fo4_326x183 wp-post-image" alt="">
+                        <div class="content-video">TOP 5 Hậu Vệ Cân Lương Đáng Dùng | FIFA Online 4 ft. Tuấn Tiền
+                            Tỉ,Ibrobot
+                            <p class="date-video">25.07.2022</p>
+                            <p class="title-video">EA Sports FIFA Online 4 Vietnam</p>
+                        </div>
+                    </div>
+                    <div class="menu-content-videos"><img width="226" height="150"
+                            src="https://fo4.garena.vn/wp-content/uploads/2022/07/TOP5-TOTS-THUMB-1920-326x183.png"
+                            class="attachment-fo4_326x183 size-fo4_326x183 wp-post-image" alt="">
+                        <div class="content-video">TOP 5 Cầu Thủ Quốc Dân Mùa 22TOTS ft. Tuấn Tiền Tỉ, Ibrobot | FIFA
+                            Online 4
+                            <p class="date-video">09.07.2022</p>
+                            <p class="title-video">EA Sports FIFA Online 4 Vietnam</p>
+                        </div>
+                    </div>
+                    <div class="menu-content-videos"><img width="226" height="150"
+                            src="https://fo4.garena.vn/wp-content/uploads/2022/07/FO4-360_Thumb14_1920x1080-326x183.png"
+                            class="attachment-fo4_326x183 size-fo4_326x183 wp-post-image" alt="">
+                        <div class="content-video">FO4 360 #14: Bí Kíp Bất Bại Tại 8th Next Field | FIFA Online 4
+                            <p class="date-video">08.07.2022</p>
+                            <p class="title-video">EA Sports FIFA Online 4 Vietnam</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <footer>
+            <img src="images/logos.png" alt="" align="left" id="logo1">
+            <img src="images/fo4.png" alt="" align="right" id="logo3">
+            <div class="content-footer">
+                © 201​8​ ELECTRONIC ARTS INC. EA, EA SPORTS, AND THE EA SPORTS LOGO ARE TRADEMARKS OF ELECTRONIC
+                ARTS
+                INC. OFFICIAL FIFA LICENSED PRODUCT. © FIFA NAME AND FIFA'S OFFICIAL LICENSED PRODUCT LOGO ARE
+                COPYRIGHTS AND/OR TRADEMARKS OF FIFA. ALL RIGHTS RESERVED. MANUFACTURED UNDER LICENSE BY ELECTRONIC
+                ARTS
+                INC. THE USE OF REAL PLAYER NAMES AND LIKENESSES IS AUTHORIZED BY FIFPRO COMMERCIAL ENTERPRISES BV.
+                THE
+                PREMIER LEAGUE LOGO © THE FOOTBALL ASSOCIATION PREMIER LEAGUE LIMITED 2018. THE PREMIER LEAGUE LOGO
+                IS A
+                TRADEMARK OF THE FOOTBALL ASSOCIATION PREMIER LEAGUE LIMITED WHICH IS REGISTERED IN THE UK AND OTHER
+                JURISDICTIONS. THE PREMIER LEAGUE CLUB LOGOS ARE COPYRIGHT WORKS AND REGISTERED TRADEMARKS OF THE
+                RESPECTIVE CLUBS. ALL ARE USED WITH THE KIND PERMISSION OF THEIR RESPECTIVE OWNERS. MANUFACTURED
+                UNDER
+                LICENSE FROM THE FOOTBALL ASSOCIATION PREMIER LEAGUE LIMITED. NO ASSOCIATION WITH NOR ENDORSEMENT OF
+                THIS PRODUCT BY ANY PLAYER IS INTENDED OR IMPLIED BY THE LICENSE GRANTED BY THE FOOTBALL ASSOCIATION
+                PREMIER LEAGUE LIMITED TO ELECTRONIC ARTS. ALL OTHER TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE
+                OWNERS.
+            </div>
+            <img src="images/icon-age.png" alt="" id="logo2" align="right">
+
+            <div class="content-footer2">
+                <br> -CÔNG TY CỔ PHẦN GIẢI TRÍ VÀ THỂ THAO ĐIỆN TỬ VIỆT NAM
+                <br> -Địa chỉ: Tầng 29, tòa nhà Trung tâm Lotte Hà Nội, số 54, đường Liễu Giai, Phường Cống Vị, Quận
+                Ba
+                Đình, Thành phố Hà Nội, Việt Nam
+                <br> -Hotline: 19001282
+            </div>
+
+        </footer>
+
+
+    </div>
+    <script src="https://uhchat.net/code.php?f=9965ca"></script>
+    <script src="Assignment.js"></script>
+    
+</body>
+
+</html>
